@@ -5,7 +5,7 @@ WVCAS_PATH_32 := $(TARGET_OUT)/lib/
 # liboemcrypto_cas.so
 include $(CLEAR_VARS)
 LOCAL_MODULE := liboemcrypto_cas
-LOCAL_MULTILIB := both
+LOCAL_MULTILIB := 32
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -19,7 +19,7 @@ include $(BUILD_PREBUILT)
 # libwvmediacas.so
 include $(CLEAR_VARS)
 LOCAL_MODULE := libwvmediacas
-LOCAL_MULTILIB := both
+LOCAL_MULTILIB := 32
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
@@ -34,7 +34,7 @@ include $(BUILD_PREBUILT)
 ifeq (,$(wildcard vendor/amlogic/common/frameworks/av/drmplayer))
 include $(CLEAR_VARS)
 LOCAL_MODULE := libdec_ca_wvcas
-LOCAL_MULTILIB := both
+LOCAL_MULTILIB := 32
 LOCAL_MODULE_SUFFIX := .so
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := SHARED_LIBRARIES
